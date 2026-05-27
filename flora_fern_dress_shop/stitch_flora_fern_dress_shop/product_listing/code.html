@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Flora &amp; Fern | The Digital Atelier</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700;800&amp;family=Manrope:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#261900",
+                        "surface-container-high": "#e9e8e5",
+                        "surface-bright": "#faf9f6",
+                        "tertiary": "#775a19",
+                        "outline-variant": "#d4c2c2",
+                        "primary": "#7b5455",
+                        "on-surface-variant": "#504444",
+                        "surface-container": "#efeeeb",
+                        "secondary-container": "#f2e0cc",
+                        "tertiary-fixed": "#ffdea5",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#f2e0cc",
+                        "inverse-primary": "#ecbbba",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-secondary-container": "#706253",
+                        "tertiary-fixed-dim": "#e9c176",
+                        "secondary-fixed-dim": "#d5c4b1",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#e3e2e0",
+                        "primary-fixed": "#ffdad9",
+                        "on-secondary-fixed": "#231a0e",
+                        "primary-fixed-dim": "#ecbbba",
+                        "on-primary-container": "#5d3a3b",
+                        "error-container": "#ffdad6",
+                        "surface-tint": "#7b5455",
+                        "inverse-on-surface": "#f2f1ee",
+                        "inverse-surface": "#2f312f",
+                        "on-primary-fixed": "#2f1314",
+                        "tertiary-container": "#d1ab63",
+                        "on-tertiary-fixed-variant": "#5d4201",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "background": "#faf9f6",
+                        "outline": "#827473",
+                        "on-primary-fixed-variant": "#603d3e",
+                        "surface-variant": "#e3e2e0",
+                        "on-surface": "#1a1c1a",
+                        "on-secondary-fixed-variant": "#514537",
+                        "surface-dim": "#dbdad7",
+                        "secondary": "#695c4d",
+                        "surface-container-low": "#f4f3f1",
+                        "primary-container": "#d4a5a5",
+                        "surface": "#faf9f6",
+                        "on-tertiary-container": "#593f00",
+                        "on-background": "#1a1c1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Epilogue"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .fill-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3 { font-family: 'Epilogue', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#faf9f6]/80 dark:bg-stone-900/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-6 h-16 w-full">
+<div class="flex items-center gap-4">
+<button class="text-[#1a1c1a] dark:text-stone-100 hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+<div class="text-xl font-bold tracking-tighter text-[#1a1c1a] dark:text-stone-100 font-['Epilogue']">
+                Flora &amp; Fern
+            </div>
+<div class="flex items-center gap-4">
+<button class="text-[#1a1c1a] dark:text-stone-100 hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-7xl mx-auto">
+<!-- Page Header & Editorial Intro -->
+<section class="mb-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="max-w-xl">
+<h1 class="text-5xl font-bold tracking-tight text-on-background mb-4 leading-none">Spring Atelier</h1>
+<p class="text-on-surface-variant font-body text-lg leading-relaxed">
+                        Curated silhouettes designed for the modern romantic. Every piece is a dialogue between organic forms and refined craftsmanship.
+                    </p>
+</div>
+<div class="flex items-center gap-2 text-label-sm font-bold uppercase tracking-[0.2em] text-primary">
+<span>18 Pieces</span>
+<span class="w-8 h-[1px] bg-outline-variant/30"></span>
+<span>New Arrival</span>
+</div>
+</div>
+</section>
+<!-- Filter Bar -->
+<nav class="sticky top-16 z-40 bg-background/95 backdrop-blur-sm py-6 mb-8">
+<div class="flex flex-wrap items-center gap-x-8 gap-y-4">
+<!-- Size Filter -->
+<div class="flex items-center gap-3">
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/60">Size</span>
+<div class="flex gap-2">
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-xs font-medium bg-surface-container-high text-on-surface hover:bg-surface-variant transition-colors">S</button>
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-xs font-medium bg-primary text-on-primary shadow-lg shadow-primary/20">M</button>
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-xs font-medium bg-surface-container-high text-on-surface hover:bg-surface-variant transition-colors">L</button>
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-xs font-medium bg-surface-container-high text-on-surface hover:bg-surface-variant transition-colors">XL</button>
+</div>
+</div>
+<div class="h-6 w-[1px] bg-outline-variant/30 hidden md:block"></div>
+<!-- Category Filter -->
+<div class="flex items-center gap-3">
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/60">Type</span>
+<div class="flex gap-2">
+<button class="px-5 py-2 rounded-full text-xs font-medium bg-surface-container-high text-on-surface hover:bg-surface-variant transition-colors">Maxi</button>
+<button class="px-5 py-2 rounded-full text-xs font-medium bg-surface-container-high text-on-surface hover:bg-surface-variant transition-colors">Midi</button>
+</div>
+</div>
+<div class="h-6 w-[1px] bg-outline-variant/30 hidden md:block"></div>
+<!-- Price Filter -->
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg border border-outline-variant/20 hover:bg-surface-container-low transition-colors group">
+<span class="text-xs font-medium text-on-surface-variant">Price Range</span>
+<span class="material-symbols-outlined text-sm text-on-surface-variant group-hover:translate-y-0.5 transition-transform">expand_more</span>
+</button>
+</div>
+</nav>
+<!-- Product Grid -->
+<div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-4 gap-y-12 md:gap-x-8 md:gap-y-16">
+<!-- Card 1 -->
+<article class="group">
+<div class="relative mb-4 overflow-hidden rounded-xl bg-surface-container-low aspect-[3/4]">
+<img alt="Draped Silk Dress" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Elegant cream silk midi dress draped softly on a model standing in a sun-drenched minimalist studio with warm shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOcErJ8VW9Zfy73oN3dvZyzrLtz3xy8dMSBFUlEjVEhas7Jsogcxyh6kbRqzZp_qdvlQLiCB7ESV238dil2B9uBlVOUqulzoHMKDODepCge2TcngJqu49hqd8sSbkvPOPFOr1k29mmOkgD26ow9daniT_qk9jk5pZqI1IqMBPs0JtsQm6Oci1DY4HoTJ67z-1_Fe5oca49giin-0jA2fyn8AGqe3xBCuxWfc7xhIg7V2li5aBqyiOY45QSrQwuPE6_ZTPFClD1A6f2"/>
+<button class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/80 backdrop-blur-md flex items-center justify-center text-primary shadow-sm hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-[20px] fill-icon" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<div class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<button class="bg-primary text-on-primary px-6 py-2.5 text-[10px] font-bold uppercase tracking-widest rounded-sm shadow-xl">Quick Add</button>
+</div>
+</div>
+<div class="flex justify-between items-start px-1">
+<div>
+<h3 class="font-headline font-bold text-base tracking-tight text-on-surface group-hover:text-primary transition-colors">Sienna Draped Midi</h3>
+<p class="text-on-surface-variant text-sm font-medium">Italian Silk</p>
+</div>
+<span class="font-headline font-bold text-on-surface">$295</span>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="group">
+<div class="relative mb-4 overflow-hidden rounded-xl bg-surface-container-low aspect-[3/4]">
+<img alt="Linen Blend Gown" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Terracotta colored linen blend maxi dress with thin straps and open back details in a Mediterranean garden setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAETwdEAoM-qv72jM9oovKhmGQbxKUz-AC5Dq_dgkD6UKFXMbeF5WP13PNPkSaCIyfbDA22JcDWSj8lOM4wogAT2o1ybzDb-9slqBJH1hU-HFVL8YqSMndf0wnvqM1FcBzduVLqt6t3YNRQlYFpHa_jB6Aq2GsQU7SOyNXWimnaN7qI_1-DPbRxus6okHqi5AI1PmPf8_KRm3UoRJ9p9eqJ1MLn32PX50SW6oCMzR2gNti30bAJU1X1SYl54z8_Zmn02F1ddjyPtct8"/>
+<button class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white/90 hover:bg-white/40 transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="flex justify-between items-start px-1">
+<div>
+<h3 class="font-headline font-bold text-base tracking-tight text-on-surface group-hover:text-primary transition-colors">Terracotta Linen Gown</h3>
+<p class="text-on-surface-variant text-sm font-medium">Sustainable Blend</p>
+</div>
+<span class="font-headline font-bold text-on-surface">$185</span>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="group">
+<div class="relative mb-4 overflow-hidden rounded-xl bg-surface-container-low aspect-[3/4]">
+<img alt="Floral Chiffon" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Delicate floral print chiffon dress with tiered ruffles and soft bell sleeves against a muted olive background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcf4dL6LJf2g_PA9HLIvOsWdsmesZOGvQiWYLnQi_nDlBWdGXFg2Tn6vbkneJDcwOfyri4g9f6uD4KjDh5mJAcpjyl17RP7E-Shu3h40LFyJzrJw3z7P_ThiHKXHUUzakW1lqjCUKUkenqmKwBdFQWcAx2sLULcJThRYgcLLBKK2g61orGxblTtgqbJ3HZDbY7pMy2chYyyITg9qriNPWf1Eg5naM6dP42ISDT9RDuu-ndlvYSm0Uvyx8oYqUJjNPgOBBcuJZo99DT"/>
+<button class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/80 backdrop-blur-md flex items-center justify-center text-primary shadow-sm hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-[20px] fill-icon" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="flex justify-between items-start px-1">
+<div>
+<h3 class="font-headline font-bold text-base tracking-tight text-on-surface group-hover:text-primary transition-colors">Meadow Tiered Maxi</h3>
+<p class="text-on-surface-variant text-sm font-medium">Recycled Chiffon</p>
+</div>
+<span class="font-headline font-bold text-on-surface">$240</span>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="group">
+<div class="relative mb-4 overflow-hidden rounded-xl bg-surface-container-low aspect-[3/4]">
+<img alt="Satin Slip" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist black satin slip dress with delicate lace detailing at the hem and neckline, high contrast lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxhgMdVOxgdX532pT0InbcRTtcsFDSbORFERMOhwPJKQvpnshf-XEexx9R6Z9UWcnbQ75Vljubdi5_-_0XS4gnRVTl3Zph4-16wzmHeXoo-0hejF3cgOcgZC-aRNEJJOQOmN8keObhivbbmWdS8N20sKr2btmUyAwyZeo33YDbW3-uCXQeRay51RNo6D5jKSCJ-uQpFua9I87fOC4t1zStDMZ1hJSHwbPtzPloIocPfmr7ipuQ5S-QtthosIeGGvH6v-wkRSwj7ZfP"/>
+<button class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white/90 hover:bg-white/40 transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="flex justify-between items-start px-1">
+<div>
+<h3 class="font-headline font-bold text-base tracking-tight text-on-surface group-hover:text-primary transition-colors">Midnight Satin Slip</h3>
+<p class="text-on-surface-variant text-sm font-medium">Premium Satin</p>
+</div>
+<span class="font-headline font-bold text-on-surface">$210</span>
+</div>
+</article>
+<!-- Card 5 (Asymmetric feature) -->
+<article class="group col-span-2 lg:col-span-1 xl:col-span-1">
+<div class="relative mb-4 overflow-hidden rounded-xl bg-surface-container-low aspect-[3/4]">
+<img alt="Velvet Evening" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Deep emerald velvet evening dress with a structured shoulder and architectural cut-out details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNl_MEHo2X4YYAqfYAs9X2Avq4mQyMWtWjOTrB0-ejZI5wwAtoj85kw4_xBk-1weP0ZOh7OYMlO8Rm5l0jF4q_1WciPgUJf3gnx4ACoGgdCQUuIviEldzewF3_4sWOaiFVUynZvmHwgBYtq8CdCR471S_hu436Lxlb4f8gj5ux22-UInXaHQYurBhXxDJg_JMbGyPMY3FF_L0IUDgLJpwZ7b3dZN9UzfQEJEo9wlmBbUrbDdPigsjh2FvIS_zYFZD-IgCC8n3fSvb9"/>
+<button class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white/90 hover:bg-white/40 transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="flex justify-between items-start px-1">
+<div>
+<h3 class="font-headline font-bold text-base tracking-tight text-on-surface group-hover:text-primary transition-colors">Emerald Sculpt Gown</h3>
+<p class="text-on-surface-variant text-sm font-medium">Textured Velvet</p>
+</div>
+<span class="font-headline font-bold text-on-surface">$420</span>
+</div>
+</article>
+<!-- Card 6 -->
+<article class="group">
+<div class="relative mb-4 overflow-hidden rounded-xl bg-surface-container-low aspect-[3/4]">
+<img alt="Cotton Eyelet" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="White organic cotton eyelet dress with puffed sleeves and a wide sash at the waist in a bright, airy field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxTc0CsPjqWZ7j2VVbLsCNpYyLj7jICrUN1mjiGbh2hTd1qL7r_rY-r1o1GC60d2yIYOOy61f1hA78_Ya8g85MOdqcHs3Xe_mEhyjqnYGVOSY3tfkzfZIO_1z4-haFLvEhaXZqpFF60aipvwVSK0wX_B2WL5wX7F60xYOGwFQZ-6Kof33R_EnPbHP4AulYQ-OAJ2x7IxSed6UrMYEI2nOd4YVdu95Bu8yCNQZPEmFZH9nWOEg41xDIeYImy4kLicpk2YZ0xMTMTjfN"/>
+<button class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white/90 hover:bg-white/40 transition-colors">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="flex justify-between items-start px-1">
+<div>
+<h3 class="font-headline font-bold text-base tracking-tight text-on-surface group-hover:text-primary transition-colors">Lumina Eyelet Dress</h3>
+<p class="text-on-surface-variant text-sm font-medium">Organic Cotton</p>
+</div>
+<span class="font-headline font-bold text-on-surface">$160</span>
+</div>
+</article>
+</div>
+<!-- Pagination / Load More -->
+<div class="mt-20 flex flex-col items-center gap-6">
+<button class="bg-primary text-on-primary px-12 py-4 rounded-sm text-[11px] font-bold uppercase tracking-[0.3em] hover:bg-on-primary-container transition-all duration-300 shadow-xl shadow-primary/10">
+                Explore More
+            </button>
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/40">Showing 6 of 18 silhouettes</span>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center pt-3 pb-6 px-4 bg-[#faf9f6]/80 dark:bg-stone-900/80 backdrop-blur-md z-50 rounded-t-none border-t border-[#d4c2c2]/15 shadow-[0_-12px_40px_rgba(26,28,26,0.06)]">
+<a class="flex flex-col items-center justify-center text-[#1a1c1a]/40 dark:text-stone-500 hover:text-[#7b5455] transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Epilogue'] text-[10px] font-medium uppercase tracking-widest mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#7b5455] dark:text-[#D4A5A5] relative after:content-[''] after:absolute after:-bottom-1 after:w-1 after:h-1 after:bg-[#7b5455] after:rounded-full" href="#">
+<span class="material-symbols-outlined fill-icon" style="font-variation-settings: 'FILL' 1;">local_mall</span>
+<span class="font-['Epilogue'] text-[10px] font-medium uppercase tracking-widest mt-1">Shop</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1a1c1a]/40 dark:text-stone-500 hover:text-[#7b5455] transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="font-['Epilogue'] text-[10px] font-medium uppercase tracking-widest mt-1">Cart</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1a1c1a]/40 dark:text-stone-500 hover:text-[#7b5455] transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Epilogue'] text-[10px] font-medium uppercase tracking-widest mt-1">Profile</span>
+</a>
+</nav>
+<!-- FAB: Contextual Search/Filter -->
+<button class="fixed bottom-24 right-6 w-14 h-14 bg-tertiary-container text-on-tertiary-container rounded-full flex items-center justify-center shadow-2xl hover:scale-105 transition-transform z-40 md:hidden">
+<span class="material-symbols-outlined">tune</span>
+</button>
+</body></html>

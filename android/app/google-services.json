@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "959517909012",
+    "project_id": "flora-d6444",
+    "storage_bucket": "flora-d6444.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959517909012:android:4d1ea237f2c5beb48d8701",
+        "android_client_info": {
+          "package_name": "com.example.flora"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvihDPcJADWwquo0zn1qraiisL-FFEyWk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
